@@ -40,9 +40,9 @@ namespace DesignPatterns.Example
         // STRATEGY PATTERN:
         // Only one method, which will receive the strategy (the kind of tax
         // we need to calculate) and the most generic type (in this
-        // case, the interface Tax); this is a type of polymorphism
+        // case, the interface ITax); this is a type of polymorphism
         // that simplifies the code and its further development
-        public void Calculate(Budget budget, Tax tax)
+        public void Calculate(Budget budget, ITax tax)
         {
             double value = tax.Calculate(budget);
             Console.WriteLine(value);

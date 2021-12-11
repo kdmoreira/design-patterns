@@ -8,8 +8,8 @@ namespace DesignPatterns
     {
         static void Taxes()
         {
-            Tax iss = new ISS();
-            Tax icms = new ICMS();
+            ITax iss = new ISS();
+            ITax icms = new ICMS();
 
             Budget budget = new Budget(500.0);
 
@@ -21,7 +21,7 @@ namespace DesignPatterns
 
         static void Taxes_Ex1()
         {
-            Tax iccc = new ICCC();
+            ITax iccc = new ICCC();
 
             Budget budget1 = new Budget(100);
             Budget budget2 = new Budget(1000);
@@ -39,13 +39,13 @@ namespace DesignPatterns
             Account account = new Account();
             account.Deposit(1000);
 
-            Investment conservative = new Conservative();
+            IInvestment conservative = new Conservative();
             Console.WriteLine(conservative.Calculate(account));
 
-            Investment moderate = new Moderate();
+            IInvestment moderate = new Moderate();
             Console.WriteLine(moderate.Calculate(account));
 
-            Investment bold = new Bold();
+            IInvestment bold = new Bold();
             Console.WriteLine(bold.Calculate(account));
 
             InvestmentManager manager = new InvestmentManager();

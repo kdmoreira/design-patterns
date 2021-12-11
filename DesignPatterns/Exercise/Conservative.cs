@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.Exercise
 {
-    public class Conservative : Investment
+    public class Conservative : IInvestment
     {
         public double Calculate(Account account)
         {

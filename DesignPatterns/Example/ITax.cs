@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.Example
 {
-    public interface Tax
+    public interface ITax
     {
         double Calculate(Budget budget);
     }

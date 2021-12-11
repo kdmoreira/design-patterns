@@ -2,7 +2,7 @@
 
 namespace DesignPatterns.Exercise
 {
-    public class Bold : Investment
+    public class Bold : IInvestment
     {
         private Random _random;
         public Bold()

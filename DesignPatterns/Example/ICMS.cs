@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.Example
 {
-    public class ICMS : Tax
+    public class ICMS : ITax
     {
         public double Calculate(Budget budget)
         {

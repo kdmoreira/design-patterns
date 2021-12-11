@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.Example
 {
-    public class ISS : Tax
+    public class ISS : ITax
     {
         public double Calculate(Budget budget)
         {

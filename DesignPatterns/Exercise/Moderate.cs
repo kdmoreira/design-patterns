@@ -2,7 +2,7 @@
 
 namespace DesignPatterns.Exercise
 {
-    public class Moderate : Investment
+    public class Moderate : IInvestment
     {
         private Random _random;
         public Moderate()

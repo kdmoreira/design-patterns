@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.Exercise
 {
-    public interface Investment
+    public interface IInvestment
     {
         double Calculate(Account account);
     }
